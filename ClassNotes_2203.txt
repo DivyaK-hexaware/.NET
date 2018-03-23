@@ -1,0 +1,108 @@
+WYSIWYG
+
+Request Headers 
+
+Injects data- attributes into the Views
+jQuery acts on the data- attributes 
+
+C4 diagrams
+
+Agile Software Methodology 
+- There is no time for detailed design 
+Crisp - It has cover all the aspects 
+C4 approach 
+Context - 
+Container
+Component 
+Class 
+
+A picture is worth a thousand words
+
+Three tier  - If the layers are on different physical machines or boxes then it is a three tier application
+Three layered - presentation, business, data layer
+Improve the performance - 
+
+Class Diagram 
+
+ASP.NET Identity
+
+
+1) Create a new MVC project IdentitySample
+2) Change the connectionstring 
+3) <connectionStrings>
+    <add name="DefaultConnection" connectionString="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\IdentitySample.mdf;Initial Catalog=IdentitySample;Integrated Security=True"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>
+
+4) Go to Nuget Package Manager console
+5) Enable-Migrations -ContextTypeName ApplicationDbContext
+6) Create a Role
+     1) Create a RoleStore
+     2) Create a RoleManager
+     3) Create a Role
+
+7) User Creation
+     1) Create a User Store
+     2) Create a User Manager
+     3) Create a User
+     4) Add the user to the role created in the previous step 
+
+8) DI Principle
+     
+9) IEmployeeReportBAL
+     
+
+1) What are the three workflows of Entity Framework?
+     Code First
+     Database First
+     Model First 
+
+2) Existing Database - Database First 
+
+3) What is the handle to the database in EF - DbContext 
+
+4) What is the reprensentation of tables - DbSet 
+
+5) What is a layout view - Template 
+     Shared Folder 
+     _ViewStart.cshtml
+   6) If I don't want the layout for a particular view can i override in the specific view. If yes, then how?
+7) In the layout view where is the specific view rendered? - RenderBody
+8) What does your RenderSection mean ?
+9) Where must the modernizr be in the page? - for old browsers if you want make it jquery compatible 
+    Beginnig of the page
+10) What are the different types of bundles?
+       ScriptBundle - jQuery
+      StyleBundle - css
+11) What is minification? What is the purpose? - Optimization of code
+12) What is used is the release version of the code ? minified 
+13) What is use of Bundling ? 
+14) Where is RouteConfig called? - Global.asax
+15) What is name of method in Global.asax - ApplicationStart
+16) What is the access specifier of controller action methods - public
+17) What is the return type of the Action methods ? ActionResult
+       ActionResult is an abstract classes
+       ViewResult, ContentResult, RedirecttoResult, JsonResult are child classes of ActionResult
+18) HttpGet, HttpPost, Put , Delete 
+       HttpGet, HttpPost 
+19) The process by which framework creates Controller, Views - Scaffolding 
+20) When scaffolding please take care not modify key values - make it hidden 
+21) If you want to give alternate names for the actionmethod 
+22) What is action filter?  - Inherits from ActionFilterAttribute 
+      [Log]
+23) If I want clients to see a friendly error page whereas developer at the hosting server must see the errors what must i set in web.config?
+CustomErrors mode= RemoteOnly 
+24) What are the rules for PrimaryKey in Entity Framework? 
+      Id,  RestuarantId
+25) How do I establish a one to may relationship 
+      Restaurant - ICollection 
+      RestaurantReview - RestaurantId
+26) How do I Enable migrations ?   
+      Package Manager Console 
+     Enable-Migrations -ContextTypeName <ContextName>
+
+     
+
+
+
+
